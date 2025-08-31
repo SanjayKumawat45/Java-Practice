@@ -72,67 +72,97 @@ public class Main {
 
 // rock paper scissor game
 
-        Random random = new Random();
+//        Random random = new Random();
+//
+//        int number = random.nextInt(1,3);
+//
+//        System.out.println(number);
+//
+//        System.out.println("Enter one Rock, Paper and Scissor: ");
+//        String userInput = input.nextLine();
+//        String computerInput = "?";
+//
+//
+//        if(number == 1){
+//            computerInput = "rock";
+//        } else if (number == 2) {
+//            computerInput = "paper";
+//        }
+//        else if (number == 3) {
+//            computerInput = "scissor";
+//        }
+//
+//
+//        System.out.println("Battle!");
+//        System.out.println("Your choice vs Computer's choice");
+//        System.out.println(userInput+" vs "+ computerInput);
+//
+//
+//
+//
+//        if (Objects.equals(userInput, "Rock") || Objects.equals(userInput, "rock")){
+//            if (number == 1){
+//                System.out.println("its a draw!");
+//
+//            }
+//            else if (number == 2){
+//                System.out.println("Computer won the game!");
+//            }
+//            else {System.out.println("You won the game!");}
+//        } else if (Objects.equals(userInput, "Paper") || Objects.equals(userInput, "paper")){
+//
+//            if (number == 2){
+//                System.out.println("its a draw!");
+//                return;
+//            }
+//            else if (number == 3){
+//                System.out.println("Computer won the game!");
+//                return;
+//            }
+//            else {System.out.println("You won the game!");
+//            return;}
+//
+//        } else{
+//
+//            if (number == 3){
+//                System.out.println("its a draw!");
+//            }
+//            else if (number == 1){
+//                System.out.println("Computer won the game!");
+//            }
+//            else {System.out.println("You won the game!");}
+//
+//        }
 
-        int number = random.nextInt(1,3);
-
-        System.out.println(number);
-
-        System.out.println("Enter one Rock, Paper and Scissor: ");
-        String userInput = input.nextLine();
-        String computerInput = "?";
 
 
-        if(number == 1){
-            computerInput = "rock";
-        } else if (number == 2) {
-            computerInput = "paper";
-        }
-        else if (number == 3) {
-            computerInput = "scissor";
-        }
+
+//        for(int i = 1; i<11; i++){
+//            System.out.println(i);
+//        }
 
 
-        System.out.println("Battle!");
-        System.out.println("Your choice vs Computer's choice");
-        System.out.println(userInput+" vs "+ computerInput);
+//        int i = 1;
+//
+////        while (i<11){
+////            System.out.println(i);
+////            i++;
+////        }
+//
+//        do {
+//            System.out.println(i);
+//            i++;
+//        }while (i<0);
 
 
 
 
-        if (Objects.equals(userInput, "Rock") || Objects.equals(userInput, "rock")){
-            if (number == 1){
-                System.out.println("its a draw!");
 
-            }
-            else if (number == 2){
-                System.out.println("Computer won the game!");
-            }
-            else {System.out.println("You won the game!");}
-        } else if (Objects.equals(userInput, "Paper") || Objects.equals(userInput, "paper")){
+        // Strings!
 
-            if (number == 2){
-                System.out.println("its a draw!");
-                return;
-            }
-            else if (number == 3){
-                System.out.println("Computer won the game!");
-                return;
-            }
-            else {System.out.println("You won the game!");
-            return;}
 
-        } else{
 
-            if (number == 3){
-                System.out.println("its a draw!");
-            }
-            else if (number == 1){
-                System.out.println("Computer won the game!");
-            }
-            else {System.out.println("You won the game!");}
 
-        }
 
 
 
