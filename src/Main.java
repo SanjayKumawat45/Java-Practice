@@ -177,15 +177,21 @@ public class    Main {
 //        System.out.println(c1.speed);
 
         Cat c1 = new Cat();
+        Animal c2 = new Cat();
 
         c1.name = "Doraemon";
         c1.age = 2;
         c1.breed = "Persian";
 
+        c2.name = "Tom";
+        c2.age = 1;
+        c2.makeSound();
+
 
         System.out.println(c1.name);
         System.out.println(c1.age);
         System.out.println(c1.breed);
+        c1.makeSound();
 
 
 
