@@ -162,19 +162,31 @@ public class    Main {
 
         //Classes oops
 
-        Car c1 = new Car();
+//        Car c1 = new Car();
+//
+//        c1.speed = 0;
 
-        c1.speed = 0;
+//        c1.accelerate(100);
+//        c1.accelerate(20);
+//        c1.accelerate(40);
+//
+//        System.out.println(c1.getModel());
+//        System.out.println(c1.speed);
+//
+//        c1.brake(80);
+//        System.out.println(c1.speed);
 
-        c1.accelerate(100);
-        c1.accelerate(20);
-        c1.accelerate(40);
+        Cat c1 = new Cat();
 
-        System.out.println(c1.getModel());
-        System.out.println(c1.speed);
+        c1.name = "Doraemon";
+        c1.age = 2;
+        c1.breed = "Persian";
 
-        c1.brake(80);
-        System.out.println(c1.speed);
+
+        System.out.println(c1.name);
+        System.out.println(c1.age);
+        System.out.println(c1.breed);
+
 
 
 
