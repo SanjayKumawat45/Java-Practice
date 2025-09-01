@@ -164,15 +164,13 @@ public class    Main {
 
         Car c1 = new Car();
 
-        c1.model = "Mustang 1965 Shelby GT350";
-        c1.year = 1965;
         c1.speed = 0;
 
         c1.accelerate(100);
         c1.accelerate(20);
         c1.accelerate(40);
 
-        System.out.println(c1.model);
+        System.out.println(c1.getModel());
         System.out.println(c1.speed);
 
         c1.brake(80);
