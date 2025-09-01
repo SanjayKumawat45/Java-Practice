@@ -4,7 +4,7 @@ import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class    Main {
     public static void main(String[] args) {
 
 //        int age = 20;
@@ -159,6 +159,26 @@ public class Main {
 
 
         // Strings!
+
+        //Classes oops
+
+        Car c1 = new Car();
+
+        c1.model = "Mustang 1965 Shelby GT350";
+        c1.year = 1965;
+        c1.speed = 0;
+
+        c1.accelerate(100);
+        c1.accelerate(20);
+        c1.accelerate(40);
+
+        System.out.println(c1.model);
+        System.out.println(c1.speed);
+
+        c1.brake(80);
+        System.out.println(c1.speed);
+
+
 
 
 
