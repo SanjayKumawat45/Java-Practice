@@ -1,4 +1,5 @@
 import innerclasses.Car;
+import innerclasses.Computer;
 
 import java.util.Scanner;
 
@@ -194,10 +195,13 @@ public class    Main {
 //        c1.makeSound();
 
 
-        Car car = new Car("Tesla");
-        Car.Engine engine = car.new Engine();
-        engine.start();
-        engine.stop();
+//        Car car = new Car("Tesla");
+//        Car.Engine engine = car.new Engine();
+//        engine.start();
+//        engine.stop();
+
+        Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
+        computer.getOs().displayInfo();
 
 
 
