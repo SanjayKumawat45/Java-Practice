@@ -1,3 +1,5 @@
+package Test;
+
 public class Car {
 
     private String model = "Mustang 1965 Shelby GT350";

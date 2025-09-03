@@ -1,3 +1,5 @@
+package Test;
+
 public class Animal {
     String name;
     int age;

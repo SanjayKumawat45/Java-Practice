@@ -1,6 +1,6 @@
-import java.util.Objects;
+import innerclasses.Car;
+
 import java.util.Scanner;
-import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -144,10 +144,10 @@ public class    Main {
 
 //        int i = 1;
 //
-////        while (i<11){
-////            System.out.println(i);
-////            i++;
-////        }
+//        while (i<11){
+//            System.out.println(i);
+//            i++;
+//        }
 //
 //        do {
 //            System.out.println(i);
@@ -162,7 +162,7 @@ public class    Main {
 
         //Classes oops
 
-//        Car c1 = new Car();
+//        Test.Car c1 = new Test.Car();
 //
 //        c1.speed = 0;
 
@@ -176,27 +176,33 @@ public class    Main {
 //        c1.brake(80);
 //        System.out.println(c1.speed);
 
-        Cat c1 = new Cat();
-        Animal c2 = new Cat();
-
-        c1.name = "Doraemon";
-        c1.age = 2;
-        c1.breed = "Persian";
-
-        c2.name = "Tom";
-        c2.age = 1;
-        c2.makeSound();
-
-
-        System.out.println(c1.name);
-        System.out.println(c1.age);
-        System.out.println(c1.breed);
-        c1.makeSound();
-
-
+//        Test.Cat c1 = new Test.Cat();
+//        Test.Animal c2 = new Test.Cat();
+//
+//        c1.name = "Doraemon";
+//        c1.age = 2;
+//        c1.breed = "Persian";
+//
+//        c2.name = "Tom";
+//        c2.age = 1;
+//        c2.makeSound();
+//
+//
+//        System.out.println(c1.name);
+//        System.out.println(c1.age);
+//        System.out.println(c1.breed);
+//        c1.makeSound();
 
 
-System.out.println("Hellow Guys");
+        Car car = new Car("Tesla");
+        Car.Engine engine = car.new Engine();
+        engine.start();
+        engine.stop();
+
+
+
+
+
 
 
 

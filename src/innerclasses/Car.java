@@ -9,9 +9,9 @@ public class Car {
         this.isEngineOn = false;
     }
 
-    class Engine{
+    public class Engine{
 
-            void start(){
+            public void start(){
                 if(!isEngineOn){
                     isEngineOn = true;
                     System.out.println(model + " engine started.");
@@ -21,7 +21,7 @@ public class Car {
                 }
             }
 
-            void stop(){
+            public void stop(){
                 if(isEngineOn){
                     isEngineOn = false;
                     System.out.println(model + "engine stopped.");
