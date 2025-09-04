@@ -1,5 +1,4 @@
-import innerclasses.Car;
-import innerclasses.Computer;
+import innerclasses.*;
 
 import java.util.Scanner;
 
@@ -200,11 +199,31 @@ public class    Main {
 //        engine.start();
 //        engine.stop();
 
-        Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
-        computer.getOs().displayInfo();
+//        Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
+//        computer.getOs().displayInfo();
+//
+//        Computer.USB usb1 = new Computer.USB("Type C");
+//        usb1.displayInfo();
 
-        Computer.USB usb1 = new Computer.USB("Type C");
-        usb1.displayInfo();
+
+        ShoppingCart shoppingCart = new ShoppingCart(220);
+//        CreditCard creditCard = new CreditCard("9363");
+        shoppingCart.processPayment(new Payment() {
+            @Override
+            public void pay(double amount) {
+                System.out.println("Paid "+amount+" using Credit Card.");
+            }
+        });
+
+        shoppingCart.processPayment(new Payment() {
+            @Override
+            public void pay(double amount) {
+                System.out.println("Paid "+amount+" using UPI.");
+            }
+        });
+
+
+
 
 
 
