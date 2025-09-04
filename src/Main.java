@@ -203,6 +203,9 @@ public class    Main {
         Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
         computer.getOs().displayInfo();
 
+        Computer.USB usb1 = new Computer.USB("Type C");
+        usb1.displayInfo();
+
 
 
 
