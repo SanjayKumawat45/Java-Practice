@@ -1,3 +1,4 @@
+import enums.Day;
 import innerclasses.*;
 
 import java.util.Scanner;
@@ -224,9 +225,13 @@ public class    Main {
 
 
 
-        Hotel hotel = new Hotel("Marriott", 10, 5);
-        hotel.reservedRoom("Sanjay", 1);
-        hotel.reservedRoom("Ashish", 5);
+//        Hotel hotel = new Hotel("Marriott", 10, 5);
+//        hotel.reservedRoom("Sanjay", 1);
+//        hotel.reservedRoom("Ashish", 5);
+
+
+//        System.out.println(Day.MONDAY);
+        Day monday = Day.MONDAY;
 
 
 
