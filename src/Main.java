@@ -206,21 +206,28 @@ public class    Main {
 //        usb1.displayInfo();
 
 
-        ShoppingCart shoppingCart = new ShoppingCart(220);
+//        ShoppingCart shoppingCart = new ShoppingCart(220);
 //        CreditCard creditCard = new CreditCard("9363");
-        shoppingCart.processPayment(new Payment() {
-            @Override
-            public void pay(double amount) {
-                System.out.println("Paid "+amount+" using Credit Card.");
-            }
-        });
+//        shoppingCart.processPayment(new Payment() {
+//            @Override
+//            public void pay(double amount) {
+//                System.out.println("Paid "+amount+" using Credit Card.");
+//            }
+//        });
+//
+//        shoppingCart.processPayment(new Payment() {
+//            @Override
+//            public void pay(double amount) {
+//                System.out.println("Paid "+amount+" using UPI.");
+//            }
+//        });
 
-        shoppingCart.processPayment(new Payment() {
-            @Override
-            public void pay(double amount) {
-                System.out.println("Paid "+amount+" using UPI.");
-            }
-        });
+
+
+        Hotel hotel = new Hotel("Marriott", 10, 5);
+        hotel.reservedRoom("Sanjay", 1);
+        hotel.reservedRoom("Ashish", 5);
+
 
 
 
