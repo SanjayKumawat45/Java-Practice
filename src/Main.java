@@ -1,3 +1,4 @@
+import Generics.Box;
 import enums.Day;
 import innerclasses.*;
 
@@ -231,7 +232,14 @@ public class    Main {
 
 
 //        System.out.println(Day.MONDAY);
-        Day monday = Day.MONDAY;
+//        Day monday = Day.MONDAY;
+
+        Box<Integer> box = new Box<>();
+        box.setValue(1);
+        int i = box.getValue();
+        System.out.println(i);
+
+
 
 
 
