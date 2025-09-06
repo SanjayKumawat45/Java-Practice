@@ -1,4 +1,5 @@
 import Generics.Box;
+import Generics.Pair;
 import enums.Day;
 import innerclasses.*;
 
@@ -234,10 +235,17 @@ public class    Main {
 //        System.out.println(Day.MONDAY);
 //        Day monday = Day.MONDAY;
 
-        Box<Integer> box = new Box<>();
-        box.setValue(1);
-        int i = box.getValue();
-        System.out.println(i);
+//        Box<Integer> box = new Box<>();
+//        box.setValue(1);
+//        int i = box.getValue();
+//        System.out.println(i);
+
+
+        Pair<String, Integer> pair = new Pair<>("Age", 20);
+
+        System.out.println(pair.getKey());
+        System.out.println(pair.getValue());
+
 
 
 
