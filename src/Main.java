@@ -241,10 +241,12 @@ public class    Main {
 //        System.out.println(i);
 
 
-        Pair<String, Integer> pair = new Pair<>("Age", 20);
+//        Pair<String, Integer> pair = new Pair<>("Age", 20);
+//
+//        System.out.println(pair.getKey());
+//        System.out.println(pair.getValue());
 
-        System.out.println(pair.getKey());
-        System.out.println(pair.getValue());
+
 
 
 
