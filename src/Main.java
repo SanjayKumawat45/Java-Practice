@@ -1,5 +1,6 @@
 import Generics.Box;
 import Generics.Pair;
+import Threads.MyThread;
 import enums.Day;
 import innerclasses.*;
 
@@ -21,9 +22,8 @@ public class    Main {
 //
 //        char grade = 'A';
 
-        Boolean isStudent = true;
-//
-//
+//        Boolean isStudent = true;
+
 //        System.out.println("GPA: "+gpa+" isStudent: "+isStudent);
 
 
@@ -99,10 +99,10 @@ public class    Main {
 //        System.out.println("Battle!");
 //        System.out.println("Your choice vs Computer's choice");
 //        System.out.println(userInput+" vs "+ computerInput);
-//
-//
-//
-//
+
+
+
+
 //        if (Objects.equals(userInput, "Rock") || Objects.equals(userInput, "rock")){
 //            if (number == 1){
 //                System.out.println("its a draw!");
@@ -158,39 +158,36 @@ public class    Main {
 //        }while (i<0);
 
 
-
-
-
         // Strings!
 
         //Classes oops
 
 //        Test.Car c1 = new Test.Car();
-//
+
 //        c1.speed = 0;
 
 //        c1.accelerate(100);
 //        c1.accelerate(20);
 //        c1.accelerate(40);
-//
+
 //        System.out.println(c1.getModel());
 //        System.out.println(c1.speed);
-//
+
 //        c1.brake(80);
 //        System.out.println(c1.speed);
 
 //        Test.Cat c1 = new Test.Cat();
 //        Test.Animal c2 = new Test.Cat();
-//
+
 //        c1.name = "Doraemon";
 //        c1.age = 2;
 //        c1.breed = "Persian";
-//
+
 //        c2.name = "Tom";
 //        c2.age = 1;
 //        c2.makeSound();
-//
-//
+
+
 //        System.out.println(c1.name);
 //        System.out.println(c1.age);
 //        System.out.println(c1.breed);
@@ -204,7 +201,7 @@ public class    Main {
 
 //        Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
 //        computer.getOs().displayInfo();
-//
+
 //        Computer.USB usb1 = new Computer.USB("Type C");
 //        usb1.displayInfo();
 
@@ -217,14 +214,13 @@ public class    Main {
 //                System.out.println("Paid "+amount+" using Credit Card.");
 //            }
 //        });
-//
+
 //        shoppingCart.processPayment(new Payment() {
 //            @Override
 //            public void pay(double amount) {
 //                System.out.println("Paid "+amount+" using UPI.");
 //            }
 //        });
-
 
 
 //        Hotel hotel = new Hotel("Marriott", 10, 5);
@@ -242,51 +238,49 @@ public class    Main {
 
 
 //        Pair<String, Integer> pair = new Pair<>("Age", 20);
-//
 //        System.out.println(pair.getKey());
 //        System.out.println(pair.getValue());
 
 
-        int[] numerators = {10,200,30,40};
-        int[] denominators = {1,2,0,4};
+//        int[] numerators = {10,200,30,40};
+//        int[] denominators = {1,2,0,4};
 
-        for (int i = 0; i< 10; i++) {
-            try {
-                System.out.println(divide(numerators[i], denominators[i]));
-            } catch (Exception e) {
-                System.out.println(e);
-            }
+
+//        for (int i = 0; i< 10; i++) {
+//            try {
+//                System.out.println(divide(numerators[i], denominators[i]));
+//            } catch (Exception e) {
+//                System.out.println(e);
+//            }
+//        }
+
+//        System.out.println("Good job :)");
+
+
+
+        MyThread thread = new MyThread();
+        Thread t1 = new Thread(thread);
+        t1.start();
+
+
+        for (; ;){
+            System.out.println("Hello");
         }
 
-        System.out.println("Good job :)");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        input.close();
+//        input.close();
 
     }
 
-    public static int divide(int a, int b){
-        try{
-            return a/b;
-        }catch (ArithmeticException e){
-            System.out.println("Arithmetic exception :(");
-            return -1;
-        }catch (Exception e){
-            System.out.println(e);
-            return -1;
-        }
-    }
+//    public static int divide(int a, int b){
+//        try{
+//            return a/b;
+//        }catch (ArithmeticException e){
+//            System.out.println("Arithmetic exception :(");
+//            return -1;
+//        }catch (Exception e){
+//            System.out.println(e);
+//            return -1;
+//        }
+//    }
 
 }
