@@ -263,9 +263,9 @@ public class    Main {
         t1.start();
 
 
-        for (; ;){
-            System.out.println("Hello");
-        }
+//        for (; ;){
+//            System.out.println("Hello");
+//        }
 
 //        input.close();
 
