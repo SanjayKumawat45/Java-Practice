@@ -1,3 +1,4 @@
+import LinkedList.Node;
 import innerclasses.Car;
 import innerclasses.Computer;
 
@@ -204,12 +205,12 @@ public class    Main {
 //        Computer computer = new Computer("Apple", "Mac Air", "Mac Os");
 //        computer.getOs().displayInfo();
 
-
-        ArrayList<Integer> list = new ArrayList<>();
-
-        list.add(1);
-        list.add(4);
-        list.add(9);
+//
+//        ArrayList<Integer> list = new ArrayList<>();
+//
+//        list.add(1);
+//        list.add(4);
+//        list.add(9);
 
 //        System.out.println(list.get(2));
 //        System.out.println(list.size());
@@ -235,13 +236,26 @@ public class    Main {
 //            System.out.println(i);
 //        }
 
-        list.set(2, 0);
+//        list.set(2, 0);
 
 //        for (int i: list){
 //            System.out.println(i);
 //        }
 
-        System.out.println(list);
+//        System.out.println(list);
+
+
+        Node node1 = new Node();
+        Node node2 = new Node();
+
+        node2.value = 2;
+        node1.value = 1;
+        node1.next = node2;
+        node2.next = null;
+
+
+
+
 
 
 
@@ -256,3 +270,4 @@ public class    Main {
     }
 
 }
+
