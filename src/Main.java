@@ -3,6 +3,8 @@ import innerclasses.Car;
 import innerclasses.Computer;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -245,13 +247,31 @@ public class    Main {
 //        System.out.println(list);
 
 
-        Node node1 = new Node();
-        Node node2 = new Node();
+//        Node node1 = new Node();
+//        Node node2 = new Node();
+//
+//        node2.value = 2;
+//        node1.value = 1;
+//        node1.next = node2;
+//        node2.next = null;
 
-        node2.value = 2;
-        node1.value = 1;
-        node1.next = node2;
-        node2.next = null;
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+        linkedList.add(4);
+        linkedList.add(5);
+
+        linkedList.removeIf(x -> x % 2 == 0);
+
+        System.out.println(linkedList);
+
+
+        LinkedList<String> animals = new LinkedList<>(Arrays.asList("Cat", "Dog", "Elephant"));
+
+        System.out.println(animals);
+
 
 
 
