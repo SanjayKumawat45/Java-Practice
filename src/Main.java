@@ -2,10 +2,8 @@ import LinkedList.Node;
 import innerclasses.Car;
 import innerclasses.Computer;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -256,22 +254,87 @@ public class    Main {
 //        node2.next = null;
 
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
-        linkedList.add(4);
-        linkedList.add(5);
+//        LinkedList<Integer> linkedList = new LinkedList<>();
+//        linkedList.add(1);
+//        linkedList.add(2);
+//        linkedList.add(3);
+//        linkedList.add(4);
+//        linkedList.add(5);
+//
+//        linkedList.removeIf(x -> x % 2 == 0);
+//
+//        System.out.println(linkedList);
+//
+//
+//        LinkedList<String> animals = new LinkedList<>(Arrays.asList("Cat", "Dog", "Elephant"));
+//
+//        System.out.println(animals);
 
-        linkedList.removeIf(x -> x % 2 == 0);
+//
+//        Vector<Integer> vector = new Vector<>(12, 4);
+//
+//
+//        System.out.println(vector.size());
 
-        System.out.println(linkedList);
 
 
-        LinkedList<String> animals = new LinkedList<>(Arrays.asList("Cat", "Dog", "Elephant"));
+//        Stack<Integer> stack = new Stack<>();
+//
+//
+//        stack.push(1);
+//        stack.push(2);
+//        stack.push(3);
+//        stack.push(4);
+//        stack.push(5);
+//
+//        System.out.println(stack);
+//
+//        stack.pop();
+//
+//        System.out.println(stack);
+//        System.out.println(stack.isEmpty());
+//        System.out.println(stack.size());
+//        System.out.println(stack.peek());
+//        System.out.println(stack.search(2));
 
-        System.out.println(animals);
 
+//        List<String> shoppingList = new ArrayList<>();
+//        shoppingList.add("Milk");
+//        shoppingList.add("Eggs");
+//        shoppingList.add("Butter");
+//        System.out.println("Initial Shopping List: "+ shoppingList);
+//
+//        for(String item : shoppingList){
+//            System.out.println(item);
+//
+//            if (item.equals("Eggs")){
+//                shoppingList.add("Butter");
+//                System.out.println("Added Butter while reading.");
+//            }
+//        }
+//
+//        System.out.println("Updated Shopping List: " + shoppingList);
+
+
+
+
+
+        List<String> shoppingList = new CopyOnWriteArrayList<>();
+        shoppingList.add("Milk");
+        shoppingList.add("Eggs");
+        shoppingList.add("Butter");
+        System.out.println("Initial Shopping List: "+ shoppingList);
+
+        for(String item : shoppingList){
+            System.out.println(item);
+
+            if (item.equals("Eggs")){
+                shoppingList.add("Butter");
+                System.out.println("Added Butter while reading.");
+            }
+        }
+
+        System.out.println("Updated Shopping List: " + shoppingList);
 
 
 
