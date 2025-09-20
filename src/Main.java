@@ -319,22 +319,77 @@ public class    Main {
 
 
 
-        List<String> shoppingList = new CopyOnWriteArrayList<>();
-        shoppingList.add("Milk");
-        shoppingList.add("Eggs");
-        shoppingList.add("Butter");
-        System.out.println("Initial Shopping List: "+ shoppingList);
+//        List<String> shoppingList = new CopyOnWriteArrayList<>(f);
+//        shoppingList.add("Milk");
+//        shoppingList.add("Eggs");
+//        shoppingList.add("Butter");
+//        System.out.println("Initial Shopping List: "+ shoppingList);
+//
+//        for(String item : shoppingList){
+//            System.out.println(item);
+//
+//            if (item.equals("Eggs")){
+//                shoppingList.add("Butter");
+//                System.out.println("Added Butter while reading.");
+//            }
+//        }
+//
+//        System.out.println("Updated Shopping List: " + shoppingList);
 
-        for(String item : shoppingList){
-            System.out.println(item);
+//        HashMap<Integer, String> map = new HashMap<>();
+//        map.put(1, "Sanjay");
+//        map.put(2, "Shreyansh");
+//        map.put(3, "Yash");
+//        System.out.println(map);
+//
+//        String student = map.get(1);
+//        System.out.println(student);
+//        System.out.println(map.get(99));
+//
+//        System.out.println(map.containsKey(3));
+//        System.out.println(map.containsValue("Sanjay"));
+//
+//        Set<Map.Entry<Integer, String>> entries = map.entrySet();
+//        for (Map.Entry<Integer, String> entry : entries){
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
+//        }
 
-            if (item.equals("Eggs")){
-                shoppingList.add("Butter");
-                System.out.println("Added Butter while reading.");
-            }
-        }
 
-        System.out.println("Updated Shopping List: " + shoppingList);
+//        HashMap<Person, String> map = new HashMap<>();
+//        Person p1 = new Person("Alice", 1);
+//        Person p2 = new Person("Bob", 2);
+//        Person p3 = new Person("Oggiy", 3);
+//        Person p4 = new Person("Doraemon", 4);
+//        Person p5 = new Person("Shinchan", 5);
+//        Person p6 = new Person("Doraemon", 4);
+//
+//
+//        map.put(p1, "Manager"); // hashcode1 --> index1
+//        map.put(p2, "Developer");// hashcode2 --> index2
+//        map.put(p3, "Ceo"); // hashcode3 --> index3
+//        map.put(p4, "Product Manager"); // hashcode4 --> index4
+//        map.put(p5, "Tester"); // hashcode5 --> index5
+//        map.put(p6, "User"); // hashcode4 --> index4 --> equals --> replace
+//
+//        System.out.println("HashMap Size: "+ map.size());
+//        System.out.println("Value for p1: "+ map.get(p1));
+//        System.out.println("Value for p2: "+ map.get(p2));
+//        System.out.println("Value for p3: "+ map.get(p3));
+//        System.out.println("Value for p4: "+ map.get(p4));
+//        System.out.println("Value for p5: "+ map.get(p5));
+//        System.out.println("Value for p6: "+ map.get(p6));
+//        //        System.out.println(p1);
+//
+//        Map<String, Integer> map2 = new HashMap<>();
+//        map2.put("Shubham",90); // hashcode1 --> index1
+//        map2.put("Neha", 92); // hashcode2 --> index2
+//        map2.put("Shubham", 99); // hashcode1 --> index1 -->equals() --> replace
+
+
+
+
+
+
 
 
 
@@ -354,3 +409,46 @@ public class    Main {
 
 }
 
+//    class Person{
+//        private String name;
+//        private int id;
+//
+//        public Person(String name, int id){
+//            this.name = name;
+//            this.id = id;
+//        }
+//
+//        public int getId(){
+//            return id;
+//        }
+//
+//        public String getName() {
+//            return name;
+//        }
+//
+//        @Override
+//        public int hashCode() {
+//            return Objects.hash(name, id);
+//        }
+//
+//        @Override
+//        public boolean equals(Object obj) {
+//            if (this == obj){
+//                return true;
+//            }
+//            if (obj == null) {
+//                return false;
+//            }
+//            if (getClass() != obj.getClass()){
+//                return false;
+//            }
+//            Person other = (Person) obj;
+//            return id == other.getId() && Objects.equals(name, other.getName());
+//
+//        }
+//
+//        @Override
+//        public String toString() {
+//        return "id: "+ id + ",  " + "name: "+ name;
+//        }
+//    }
