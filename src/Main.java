@@ -389,6 +389,32 @@ public class    Main {
 
 
 
+//        LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+//        HashMap<String, Integer> hashMap = new HashMap<>();
+//
+//        linkedHashMap.put("Orange", 10);
+//        linkedHashMap.put("Apple", 30);
+//        linkedHashMap.put("Guava", 20);
+//
+//        for (Map.Entry<String, Integer> entry : linkedHashMap.entrySet()){
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
+//        }
+
+
+        LRUCache<String, Integer> studentMap = new LRUCache<>(3);
+        studentMap.put("Bob",99 );
+        studentMap.put("Alice",90 );
+        studentMap.put("Ram",91 );
+        studentMap.put("shyam",89 );
+
+
+        System.out.println(studentMap);
+
+
+
+
+
+
 
 
 
@@ -408,6 +434,25 @@ public class    Main {
     }
 
 }
+
+
+
+class LRUCache<K, V> extends LinkedHashMap{
+
+    private int capacity;
+
+    public LRUCache(int capacity){
+        super(capacity, 0.75f,true);
+        this.capacity = capacity;
+    }
+
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry eldest) {
+        return size() > capacity;
+    }
+}
+
 
 //    class Person{
 //        private String name;
