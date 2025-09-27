@@ -401,15 +401,53 @@ public class    Main {
 //        }
 
 
-        LRUCache<String, Integer> studentMap = new LRUCache<>(3);
-        studentMap.put("Bob",99 );
-        studentMap.put("Alice",90 );
-        studentMap.put("Ram",91 );
-        studentMap.put("shyam",89 );
+//        LRUCache<String, Integer> studentMap = new LRUCache<>(3);
+//        studentMap.put("Bob",99 );
+//        studentMap.put("Alice",90 );
+//        studentMap.put("Ram",91 );
+//        studentMap.put("shyam",89 );
+//
+//
+//        System.out.println(studentMap);
 
 
-        System.out.println(studentMap);
+//        String key1 = new String("Key");
+//        String key2 = new String("Key");
+//
+//        Map<String, Integer> map = new HashMap<>();
+//        map.put(key1,1);
+//        map.put(key2,2);
+//
+//        System.out.println(map);
 
+
+//
+//        String key1 = new String("Key");
+//        String key2 = new String("Key");
+//
+//        Map<String, Integer> map = new IdentityHashMap<>();
+//        map.put(key1,1);
+//        map.put(key2,2);
+//
+//        System.out.println(map);
+
+
+
+        // sortedMap
+
+        SortedMap<Integer, String> map = new TreeMap<>((a,b) -> b-a);
+
+        map.put(99, "Shubham");
+        map.put(92, "Ram");
+        map.put(20, "Rohit");
+        map.put(50, "Chirag");
+
+        System.out.println(map);
+        System.out.println(map.firstKey());
+        System.out.println(map.lastKey());
+        System.out.println(map.headMap(92));
+        System.out.println(map.tailMap(92));
+//
 
 
 
